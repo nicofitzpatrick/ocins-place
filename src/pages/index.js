@@ -1,11 +1,16 @@
 import * as React from "react";
 import Layout from "../components/layout";
+// import { StaticImage } from "gatsby-plugin-image";
+import mainSection from "../images/front-image.jpg";
 import "../main.css";
 
 const IndexPage = () => {
   return (
     <Layout>
-      <p>Testing this works</p>
+      <div className="main-section">
+        {/* <StaticImage alt="neon restaurant" src="../images/front-image.jpg" /> */}
+        <img src={mainSection} alt="neon restaurant" />
+      </div>
     </Layout>
   );
 };
