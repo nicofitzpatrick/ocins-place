@@ -31,3 +31,75 @@
   color: green;
   cursor: pointer;
 }
+
+
+@media screen and (max-width: 750px) {
+
+  .line {
+    width: 30px;
+    height: 3px;
+    background: black;
+    margin: 5px;
+  }
+
+  .nav-container {
+    position: relative;
+  }
+
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 0%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 1;
+  }
+
+  .nav-links {
+    padding-top: 3rem;
+    position: absolute;
+    align-items: flex-start;
+    flex-direction: column;
+    /* background: lightblue; */
+    height: 100vh;
+    /* height: 28em; */
+    width: 100%;
+    justify-content: space-around;
+    /* background-color: lavender; */
+    clip-path: circle(10px);
+    -webkit-clip-path: circle(10px);
+    pointer-events: none;
+    height: 80vh;
+  }
+
+  .nav-links.open {
+    clip-path: circle(500px);
+    -webkit-clip-path: circle(500px);
+    pointer-events: all;
+  }
+
+  .nav-link {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    padding-top: 3rem;
+    font-size: 35px;
+    /* padding-bottom: 4rem; */
+    /* padding: 3rem 0 6rem 0; */
+    /* opacity: 0; */
+  }
+
+  /* .nav-links li a {
+    font-size: 35px;
+  } */
+
+  .logo-name {
+    z-index: 1;
+  }
+}
+
+/* @media screen and (max-width: 500px) {
+  .nav-links {
+    height: 80vh;
+  }
+} */
